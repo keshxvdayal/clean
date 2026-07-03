@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sparkle &amp; Co. — Cleaning, done properly</title>
+<meta name="description" content="Residential and commercial cleaning with a spotless track record. Book in under a minute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- scroll progress -->
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<!-- cursor blob -->
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="28" height="28">
+          <path d="M20 4 C22 14 26 18 34 20 C26 22 22 26 20 36 C18 26 14 22 6 20 C14 18 18 14 20 4 Z" fill="currentColor"/>
+        </svg>
+      </span>
+      Sparkle&nbsp;&amp;&nbsp;Co.
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-small btn-ink nav-cta">Get a quote</a>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow"><span class="eyebrow-dot"></span>Booking in Pune &amp; nearby — same-week slots open</p>
+      <h1 class="hero-title">
+        Move your cursor.<br>
+        Watch it <span class="wipe-word">disappear.</span>
+      </h1>
+      <p class="hero-sub">That's the whole pitch. Dust, grime, streaks, clutter — gone, quietly, while you get on with your day. Sparkle &amp; Co. has been making rooms look like this since 2016.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-ink">Book a cleaning →</a>
+        <a href="#services" class="btn btn-ghost">See what we do</a>
+      </div>
+      <div class="hero-proof">
+        <div class="proof-stat"><span class="num" data-count="5200" data-suffix="+">0</span><span class="label">homes &amp; offices cleaned</span></div>
+        <div class="proof-stat"><span class="num" data-count="4.9" data-decimal="1" data-suffix="★">0</span><span class="label">average client rating</span></div>
+        <div class="proof-stat"><span class="num" data-count="8" data-suffix=" yrs">0</span><span class="label">in business</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual">
+      <div class="visual-frame">
+        <div class="layer grime"></div>
+        <div class="layer clean"></div>
+        <div class="reveal-ring" id="revealRing"></div>
+        <p class="visual-hint" id="visualHint">move your mouse over this</p>
+      </div>
+      <span class="visual-orb orb-a" aria-hidden="true"></span>
+      <span class="visual-orb orb-b" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <!-- LOGO / TRUST STRIP (marquee) -->
+  <section class="trust-strip">
+    <p class="trust-label">Trusted by households &amp; teams at</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Maple Residency</span>
+        <span class="dot">•</span>
+        <span>Northbridge Offices</span>
+        <span class="dot">•</span>
+        <span>Willow Coworks</span>
+        <span class="dot">•</span>
+        <span>The Aster Apartments</span>
+        <span class="dot">•</span>
+        <span>Fernhill Clinic</span>
+        <span class="dot">•</span>
+        <span>Maple Residency</span>
+        <span class="dot">•</span>
+        <span>Northbridge Offices</span>
+        <span class="dot">•</span>
+        <span>Willow Coworks</span>
+        <span class="dot">•</span>
+        <span>The Aster Apartments</span>
+        <span class="dot">•</span>
+        <span>Fernhill Clinic</span>
+        <span class="dot">•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="section-head">
+      <p class="section-eyebrow">What we clean</p>
+      <h2 class="section-title">Pick a space. We'll handle the rest.</h2>
+    </div>
+
+    <div class="service-grid">
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 22 L24 8 L40 22" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 20 V40 H36 V20" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 40 V28 H28 V40" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Home cleaning</h3>
+        <p>Kitchens, bathrooms, bedrooms and living spaces — the full sweep, dusted, mopped and left smelling like nothing at all.</p>
+        <span class="service-price">from ₹1,499</span>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="28" height="32" rx="2" stroke="currentColor" stroke-width="2.4"/><path d="M16 16 H22 M16 22 H32 M16 28 H32 M16 34 H26" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Office &amp; commercial</h3>
+        <p>Desks, floors, kitchenettes, glass and washrooms — scheduled around your working hours, not the other way round.</p>
+        <span class="service-price">from ₹3,999</span>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.4"/><path d="M24 15 L27 21 L33 22 L28.5 26.5 L29.5 33 L24 30 L18.5 33 L19.5 26.5 L15 22 L21 21 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Deep clean</h3>
+        <p>Grout, skirting, appliance interiors, behind-the-sofa — the corners a weekly clean never quite reaches.</p>
+        <span class="service-price">from ₹2,799</span>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="18" width="16" height="16" rx="1.5" stroke="currentColor" stroke-width="2.4"/><rect x="26" y="12" width="16" height="22" rx="1.5" stroke="currentColor" stroke-width="2.4"/><path d="M10 18 V13 H18 V18" stroke="currentColor" stroke-width="2.4"/></svg>
+        </div>
+        <h3>Move in / move out</h3>
+        <p>An empty flat, cleaned top to bottom, before keys change hands. Landlords and tenants both sleep easier.</p>
+        <span class="service-price">from ₹3,299</span>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 6 C31 12 37 18 37 26 A13 13 0 0 1 11 26 C11 18 17 12 24 6 Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Carpet &amp; upholstery</h3>
+        <p>Steam-cleaned rugs, sofas and mattresses — stains lifted, allergens down, fabric smelling fresh again.</p>
+        <span class="service-price">from ₹1,999</span>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="2.4"/><rect x="26" y="8" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="2.4"/><rect x="8" y="26" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="2.4"/><rect x="26" y="26" width="14" height="14" rx="1.5" stroke="currentColor" stroke-width="2.4"/></svg>
+        </div>
+        <h3>Window &amp; glass</h3>
+        <p>Streak-free glass, tracks and sills, inside and out, on whatever floor you happen to be on.</p>
+        <span class="service-price">from ₹1,199</span>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section why">
+    <div class="why-inner">
+      <div class="section-head">
+        <p class="section-eyebrow">Why people rebook</p>
+        <h2 class="section-title">Four things we don't compromise on.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-num">Insured</span>
+          <h3>Bonded &amp; insured</h3>
+          <p>Every job is covered. If something's ever damaged, it's on us to make right — no arguments.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-num">Eco</span>
+          <h3>Low-residue products</h3>
+          <p>Plant-based cleaners by default. Tell us if you'd rather we didn't, and we'll switch it up.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-num">Flexible</span>
+          <h3>Reschedule, free</h3>
+          <p>Plans change. Move your slot up to 12 hours out with no fee and no awkward phone call.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-num">Guaranteed</span>
+          <h3>24-hour re-clean</h3>
+          <p>Not happy with a spot? Flag it within a day and we'll send someone back, on us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALLAX BANNER -->
+  <section class="banner" id="banner">
+    <div class="banner-img" id="bannerImg"></div>
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <p class="section-eyebrow banner-eyebrow">The result</p>
+      <h2 class="banner-title">This is what "done" looks like.</h2>
+      <p class="banner-sub">Not just tidy — actually clean. The kind you notice with your hand on the counter, not just your eyes.</p>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="process">
+    <div class="section-head">
+      <p class="section-eyebrow">How it works</p>
+      <h2 class="section-title">Three steps, start to finish.</h2>
+    </div>
+    <ol class="process-list">
+      <li class="process-step">
+        <span class="step-index">01</span>
+        <h3>Book online</h3>
+        <p>Pick a service, a date and a time window. Takes about ninety seconds, no account needed.</p>
+      </li>
+      <li class="process-step">
+        <span class="step-index">02</span>
+        <h3>We show up &amp; clean</h3>
+        <p>A vetted, background-checked cleaner arrives with their own kit and works through your checklist.</p>
+      </li>
+      <li class="process-step">
+        <span class="step-index">03</span>
+        <h3>You check &amp; relax</h3>
+        <p>Walk through together, sign off on your phone, and you're done. Pay only after it's finished.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section reviews" id="reviews">
+    <div class="section-head">
+      <p class="section-eyebrow">Reviews</p>
+      <h2 class="section-title">What clients say after the first visit.</h2>
+    </div>
+    <div class="review-track">
+      <article class="review-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"I've used three cleaning services in this city. Sparkle &amp; Co. is the first one that cleaned under the bed without being asked."</p>
+        <div class="review-who"><span class="who-name">Ananya R.</span><span class="who-tag">Home client, 2 years</span></div>
+      </article>
+      <article class="review-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"We switched our office of 40 people over from a bigger chain. Fewer no-shows, better attention to the kitchen area. Simple as that."</p>
+        <div class="review-who"><span class="who-name">Devraj S.</span><span class="who-tag">Office manager, Northbridge</span></div>
+      </article>
+      <article class="review-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Booked a move-out clean the night before handover. They fit me in same day and the deposit came back in full."</p>
+        <div class="review-who"><span class="who-name">Meera K.</span><span class="who-tag">Move-out clean</span></div>
+      </article>
+      <article class="review-card">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"The 24-hour re-clean guarantee is not a gimmick — I used it once and they came back the next morning, no fuss."</p>
+        <div class="review-who"><span class="who-name">Farhan A.</span><span class="who-tag">Home client, 8 months</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section pricing" id="pricing">
+    <div class="section-head">
+      <p class="section-eyebrow">Pricing</p>
+      <h2 class="section-title">Straightforward plans, cancel anytime.</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Basic</h3>
+        <p class="price-desc">A tidy-up for spaces that don't need heavy lifting.</p>
+        <p class="price-amount">₹1,499<span>/visit</span></p>
+        <ul class="price-list">
+          <li>Kitchen &amp; bathroom wipe-down</li>
+          <li>Floors vacuumed &amp; mopped</li>
+          <li>Dusting, surfaces &amp; sills</li>
+          <li>Trash emptied</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Choose Basic</a>
+      </div>
+
+      <div class="price-card featured">
+        <span class="price-badge">Most booked</span>
+        <h3>Standard</h3>
+        <p class="price-desc">Our default recommendation for most homes.</p>
+        <p class="price-amount">₹2,499<span>/visit</span></p>
+        <ul class="price-list">
+          <li>Everything in Basic</li>
+          <li>Inside oven &amp; fridge exterior</li>
+          <li>Baseboards &amp; door frames</li>
+          <li>Bed linen change</li>
+          <li>24-hour re-clean guarantee</li>
+        </ul>
+        <a href="#contact" class="btn btn-ink">Choose Standard</a>
+      </div>
+
+      <div class="price-card">
+        <h3>Premium</h3>
+        <p class="price-desc">The deep clean, for move-outs or big resets.</p>
+        <p class="price-amount">₹3,999<span>/visit</span></p>
+        <ul class="price-list">
+          <li>Everything in Standard</li>
+          <li>Grout &amp; tile scrubbing</li>
+          <li>Cabinet interiors</li>
+          <li>Carpet spot-treatment</li>
+          <li>Window tracks &amp; blinds</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline">Choose Premium</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <p class="section-eyebrow">Get a quote</p>
+        <h2 class="section-title">Tell us about the space. We'll do the math.</h2>
+        <p class="contact-sub">Fill this in and we'll text or email a quote within a couple of hours, usually much sooner during the day.</p>
+        <ul class="contact-details">
+          <li><strong>Phone</strong><span>+91 98765 43210</span></li>
+          <li><strong>Email</strong><span>hello@sparkleand.co</span></li>
+          <li><strong>Hours</strong><span>Mon–Sat, 8am–7pm</span></li>
+          <li><strong>Area</strong><span>Pune &amp; nearby suburbs</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="quoteForm">
+        <div class="form-row">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" placeholder="+91 90000 00000" required>
+          </label>
+        </div>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@email.com" required>
+        </label>
+        <div class="form-row">
+          <label>
+            <span>Service</span>
+            <select name="service">
+              <option>Home cleaning</option>
+              <option>Office &amp; commercial</option>
+              <option>Deep clean</option>
+              <option>Move in / move out</option>
+              <option>Carpet &amp; upholstery</option>
+              <option>Window &amp; glass</option>
+            </select>
+          </label>
+          <label>
+            <span>Preferred date</span>
+            <input type="date" name="date">
+          </label>
+        </div>
+        <label>
+          <span>Anything we should know?</span>
+          <textarea name="message" rows="3" placeholder="Square footage, pets, access instructions..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-ink btn-full">Send &amp; get a quote →</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <a href="#top" class="brand footer-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="24" height="24"><path d="M20 4 C22 14 26 18 34 20 C26 22 22 26 20 36 C18 26 14 22 6 20 C14 18 18 14 20 4 Z" fill="currentColor"/></svg>
+      </span>
+      Sparkle&nbsp;&amp;&nbsp;Co.
+    </a>
+    <p class="footer-tag">Cleaning, done properly — since 2016.</p>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Home cleaning</a>
+      <a href="#services">Office cleaning</a>
+      <a href="#services">Deep clean</a>
+      <a href="#services">Move in / out</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+      <a href="mailto:hello@sparkleand.co">hello@sparkleand.co</a>
+      <a href="#contact">Pune &amp; nearby suburbs</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="LinkedIn">LI</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Sparkle &amp; Co. All rights reserved.</span>
+    <span>Made with care, mopped with pride.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
